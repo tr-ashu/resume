@@ -1,0 +1,169 @@
+.profile_profileImg img {
+    display: inline-block;
+    margin: auto;
+    width: 235px;
+}
+ul.skill_list description img{
+   display: inline;
+   width: 11px;
+   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Ubuntu+Condensed&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #ff7613;
+    --text-color: #727171;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: Inter, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* common style */
+a {
+    text-decoration: none;
+    color: white;
+}
+.description{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.title{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#about{
+   font-size: large;
+   margin-top: 10px;
+   text-decoration: underline;
+   color: var(--primary-color);
+   font-family: Inter,sans-serif;
+}
+
+/* layouts */
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: #070707;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem
+}
+
+@media only screen and (max-width: 768px){
+.container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 3rem;
+    gap: 7rem;
+}
+}
+.profile{
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+/* profile */
+.profile_container{
+    display: flex;
+    gap: 2rem;
+}
+#image img{
+    position: absolute;
+    width: 25px;
+    box-sizing: border-box;
+    margin-left: -31px;
+    width: 23px;
+    
+}
+#image p{
+    
+    line-height: 27px;
+}
+#webimage a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-left: 8px;
+    position: absolute;
+}
+
+#webimage img{
+    display: inline-block;
+    width: 23px;
+    margin-left: -31px;
+}
+.group-2{
+    display: inline-block;
+    line-height: 4px;
+}
+
+
+.profile_profileImg{
+    max-width: 250px;
+}
+
+.profile_name_firstName{
+    color: white;
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+.profile_name_lastName {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+}
+.profile_title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#download-button{
+   display: block;
+   text-decoration: underline;
+   font-size: 1.6rem;
+   margin-top: 1rem; 
+}
+#download-button:hover {
+    color: var(--primary-color);
+}
+@media only screen and (max-width: 768px){
+.profile_container{
+    flex-direction: column;
+}
+}
+
+/* Expertise */
+.skill_list{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+    
+
+
+    
